@@ -1,4 +1,4 @@
-## This code was modified to allow info windows with text imported from Json files- revital Kaisar
+## This code was modified to allow info windows with text imported from Json files- revitalk
 
 # Harnessing the Google Maps JavaScript API the Right Way
 
