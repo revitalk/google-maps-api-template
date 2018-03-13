@@ -48,9 +48,9 @@ function plotMarkers(m)
         map: map,
         animation: google.maps.Animation.DROP
       })
-        marker.addListener('click', toggleBounce);
     );
   
+        marker.addListener('click', toggleBounce);
 
     
     bounds.extend(position);
