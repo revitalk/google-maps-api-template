@@ -51,15 +51,16 @@ function plotMarkers(m)
         marker.addListener('click', toggleBounce);
     );
   
+
+    
+    bounds.extend(position);
+  });
+  map.fitBounds(bounds);
+}
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
     marker.setAnimation(null);
   } else {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
-}
-    
-    bounds.extend(position);
-  });
-  map.fitBounds(bounds);
 }
