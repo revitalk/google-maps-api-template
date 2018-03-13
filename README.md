@@ -1,3 +1,5 @@
+## This code was modified to allow info windows with text imported from Json files- revital Kaisar
+
 # Harnessing the Google Maps JavaScript API the Right Way
 
 Jamie Shields walks through best practices for getting started with the Google Maps JavaScript API.
