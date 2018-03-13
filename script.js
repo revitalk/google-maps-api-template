@@ -50,7 +50,7 @@ function plotMarkers(m)
       })
     );
   
-        marker.addListener('click', toggleBounce);
+        markers.addListener('click', toggleBounce);
 
     
     bounds.extend(position);
