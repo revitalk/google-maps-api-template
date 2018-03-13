@@ -29,6 +29,7 @@ function initMap()
 }
 
 var markers;
+var marker;
 var bounds;
 
 function plotMarkers(m)
