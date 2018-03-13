@@ -58,7 +58,8 @@ function plotMarkers(m)
   });
   map.fitBounds(bounds);
 }
-      marker.addListener('click', toggleBounce);
+      
+marker.addListener('click', toggleBounce);
 
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
