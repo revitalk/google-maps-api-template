@@ -44,8 +44,7 @@ function plotMarkers(m)
     });
 
     
-    marker= markers.push(
-      new google.maps.Marker({
+    marker= new google.maps.Marker({
         position: position,
         map: map,
         animation: google.maps.Animation.DROP
@@ -53,7 +52,7 @@ function plotMarkers(m)
       marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
-    );
+  
 
 
     
