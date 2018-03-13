@@ -42,7 +42,7 @@ function plotMarkers(m)
     });
 
     
-    markers.push(
+    marker= markers.push(
       new google.maps.Marker({
         position: position,
         map: map,
@@ -50,7 +50,6 @@ function plotMarkers(m)
       })
     );
   
-        markers.addListener('click', toggleBounce);
 
     
     bounds.extend(position);
