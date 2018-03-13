@@ -25,6 +25,8 @@ function initMap()
   fetch('markers.json')
     .then(function(response){return response.json()})
     .then(plotMarkers);
+    marker.addListener('click', toggleBounce);
+
 }
 
 var markers;
@@ -50,7 +52,6 @@ function plotMarkers(m)
       })
     );
   
-  marker.addListener('click', toggleBounce);
 
     
     bounds.extend(position);
