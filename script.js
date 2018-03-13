@@ -50,6 +50,9 @@ function plotMarkers(m)
         map: map,
         animation: google.maps.Animation.DROP
       })
+      marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
     );
 
 
