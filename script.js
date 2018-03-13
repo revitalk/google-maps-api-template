@@ -26,7 +26,7 @@ function initMap()
     .then(function(response){return response.json()})
     .then(plotMarkers);
 
-
+}
 
 var markers;
 var bounds;
@@ -50,14 +50,15 @@ function plotMarkers(m)
         animation: google.maps.Animation.DROP
       })
     );
-      marker.addListener('click', toggleBounce);
-  }
+
 
     
     bounds.extend(position);
   });
   map.fitBounds(bounds);
 }
+      marker.addListener('click', toggleBounce);
+
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
     marker.setAnimation(null);
