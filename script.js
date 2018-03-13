@@ -50,12 +50,10 @@ function plotMarkers(m)
       })
     );
     
+ markers.addListener('click', infowindow.open(map, Marker)); 
 
     
     bounds.extend(position);
   });
- markers.addListener('click', function() {
-          infowindow.open(map, Marker);
-        }); 
   map.fitBounds(bounds);
 }
