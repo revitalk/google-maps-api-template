@@ -51,7 +51,7 @@ function plotMarkers(m)
     );
     
  markers.addListener('click', function() {
-          infowindow.open(map, marker);
+          infowindow.open(map, Marker);
         }); 
     
     bounds.extend(position);
