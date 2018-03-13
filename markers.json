@@ -1,7 +1,9 @@
 [
   {
+    "title": "Duesbury",
     "lat": 53.817680, 
-    "lng": -1.537657
+    "lng": -1.537657,
+    "description": "lorem ipsum"
   },
   {
     "lat": 53.790123,
