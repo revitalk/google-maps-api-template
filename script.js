@@ -40,8 +40,9 @@ function plotMarkers(m)
   m.forEach(function (marker) {
     var position = new google.maps.LatLng(marker.lat, marker.lng);
     var infowindow = new google.maps.InfoWindow({
-          content: marker.description
-    });
+          content: marker.title
+    }); 
+
 
     
     marker= new google.maps.Marker({
