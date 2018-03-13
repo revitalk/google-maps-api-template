@@ -37,7 +37,11 @@ function plotMarkers(m)
 
   m.forEach(function (marker) {
     var position = new google.maps.LatLng(marker.lat, marker.lng);
+    var infowindow = new google.maps.InfoWindow({
+          content: marker.description
+    });
 
+    
     markers.push(
       new google.maps.Marker({
         position: position,
@@ -45,7 +49,11 @@ function plotMarkers(m)
         animation: google.maps.Animation.DROP
       })
     );
-
+    
+marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+    
     bounds.extend(position);
   });
 
