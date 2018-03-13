@@ -48,10 +48,16 @@ function plotMarkers(m)
         map: map,
         animation: google.maps.Animation.DROP
       })
+        marker.addListener('click', toggleBounce);
     );
-    
- markers.addListener('click', infowindow.open(map, markers);); 
-
+  
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
     
     bounds.extend(position);
   });
