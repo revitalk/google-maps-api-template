@@ -40,7 +40,7 @@ function plotMarkers(m)
   m.forEach(function (marker) {
     var position = new google.maps.LatLng(marker.lat, marker.lng);
     var infowindow = new google.maps.InfoWindow({
-          content: marker.title
+          content: "stam"
     }); 
 
 
