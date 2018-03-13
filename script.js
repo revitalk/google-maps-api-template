@@ -50,9 +50,8 @@ function plotMarkers(m)
       })
     );
   
-    marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
+  marker.addListener('click', toggleBounce);
+
     
     bounds.extend(position);
   });
