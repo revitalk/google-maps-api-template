@@ -2,7 +2,7 @@
   {
     "lat": 53.817680, 
     "lng": -1.537657,
-    "description": "<p>Oakwood text</p><img src=\"oakwoodpark.jpg\">"
+    "description": "<img src=\"oakwoodpark.jpg\" style=\"float:left\"><p>Oakwood text</p>"
   },
   {
     "lat": 53.790123,
