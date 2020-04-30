@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var js_file = document.createElement('script');
     js_file.type = 'text/javascript';
-    js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&signed_in=true&key=AIzaSyCSaSvPX9hs_WQXvzRIwm9J-2ZAyxROlEA&language=' + lang;
+    js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&signed_in=true&key=AddKey&language=' + lang;
     document.getElementsByTagName('head')[0].appendChild(js_file);
   }
 });
